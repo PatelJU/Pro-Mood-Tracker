@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    /* Add more responsive styles as needed */
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px; /* Further adjust font size for mobile */
+    }
+    /* Add more responsive styles as needed */
+  }
+}
+
+/* Additional responsive styles for components can be added here */

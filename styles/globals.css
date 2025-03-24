@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --mood-1: 0 84.2% 60.2%;
+    --mood-2: 38 92% 50%;
+    --mood-3: 221.2 83.2% 53.3%;
+    --mood-4: 142.1 76.2% 36.3%;
+    --mood-5: 27 87% 67%;
+  }
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --mood-1: 0 72% 51%;
+    --mood-2: 38 92% 50%;
+    --mood-3: 214 100% 60%;
+    --mood-4: 142.1 70.6% 45.3%;
+  }
+  .sunset {
+    --background: 48 100% 97%;
+    --foreground: 30 67% 10%;
+    --card: 48 100% 97%;
+    --card-foreground: 30 67% 10%;
+    --popover: 48 100% 97%;
+    --popover-foreground: 30 67% 10%;
+    --primary: 30 95% 60%;
+    --primary-foreground: 48 100% 97%;
+    --secondary: 48 96% 89%;
+    --secondary-foreground: 30 67% 10%;
+    --muted: 48 96% 89%;
+    --muted-foreground: 30 50% 40%;
+    --accent: 48 96% 89%;
+    --accent-foreground: 30 67% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 48 100% 97%;
+    --border: 30 40% 84%;
+    --input: 30 40% 84%;
+    --ring: 30 95% 60%;
+    --mood-1: 0 84.2% 60.2%;
+    --mood-2: 30 95% 60%;
+    --mood-3: 48 96% 67%;
+    --mood-4: 27 96% 61%;
+  }
+  .ocean {
+    --background: 200 100% 97%;
+    --foreground: 200 67% 10%;
+    --card: 200 100% 97%;
+    --card-foreground: 200 67% 10%;
+    --popover: 200 100% 97%;
+    --popover-foreground: 200 67% 10%;
+    --primary: 199 95% 60%;
+    --primary-foreground: 200 100% 97%;
+    --secondary: 200 96% 89%;
+    --secondary-foreground: 200 67% 10%;
+    --muted: 200 96% 89%;
+    --muted-foreground: 200 50% 40%;
+    --accent: 200 96% 89%;
+    --accent-foreground: 200 67% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 200 100% 97%;
+    --border: 200 40% 84%;
+    --input: 200 40% 84%;
+    --ring: 199 95% 60%;
+    --mood-1: 280 84% 60%;
+    --mood-2: 230 84% 60%;
+    --mood-3: 199 95% 60%;
+    --mood-4: 187 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.chart-container {
+  scrollbar-width: thin;
+  scrollbar-color: #e9d5ff #ffffff;
+  -webkit-overflow-scrolling: touch;
+}
+
+.chart-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.chart-container::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.chart-container::-webkit-scrollbar-thumb {
+  background: #e9d5ff;
+  border-radius: 4px;
+}
+
+.chart-container::-webkit-scrollbar-thumb:hover {
+  background: #d8b4fe;
+}
+
+/* Ensure chart container is visible */
+.recharts-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure tooltips appear above chart */
+.recharts-tooltip-wrapper {
+  z-index: 20;
+}
+
+@media (prefers-color-scheme: dark) {
+  .chart-container::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+  
+  .chart-container::-webkit-scrollbar-thumb {
+    background: #4b5563;
+  }
+  
+  .chart-container::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+  }
+}
+
+/* Custom component styles */
+.form-input {
+  @apply flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.form-select {
+  @apply flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.glass {
+  @apply bg-background/80 backdrop-blur-sm border shadow-sm;
+}
